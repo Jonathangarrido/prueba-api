@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="loginApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
+  <meta name="theme-color" content="#D71E00">
+  <link rel="stylesheet" href="./css/main.css">
+  <meta>
+</head>
+<body>
+  <!--[if lt IE 8]>
+    <p class="browsehappy">Estás usando un navegador <strong>desactualizado</strong>.Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a>Para mejorar la experien
+  <![endif]-->
+  <ng-view></ng-view>
+
+  <script src="./lib/angular/angular.js"></script>
+  <script src="./lib/angular-route/angular-route.js"></script>
+  <script src="./lib/angular-resource/angular-resource.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/components/mi-session/mi-login/mi-login.js"></script>
+  <script src="./js/components/mi-session/mi-service/login-service.js"></script>
+  <script src="./js/components/mi-session/mi-service/session-service.js"></script>
+  <script src="./js/components/mi-session/mi-service/api-service.js"></script>
+  <script src="./js/components/mi-session/mi-admin/mi-admin.js"></script>
+</body>
+</html>

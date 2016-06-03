@@ -1,0 +1,23 @@
+{
+  "name": "im-oportunidades",
+  "description": "",
+  "main": "Gulpfile.js",
+  "authors": [
+    "jonathan <jonathan.garrido1988@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.6",
+    "angular-route": "^1.5.6",
+    "angular-resource": "^1.5.6"
+  }
+}

@@ -1,0 +1,80 @@
+/* ------------------------------------
+      ·Typography
+  -------------------------------------*/
+
+html,
+body{
+  font-size: $basefontsize;
+  font-family: $basefont;
+  font-weight: $baseheadingfontweight;
+  line-height: $baselineheight;
+  background-color: $background;
+  color: $textcolor;
+  @include respond-to(m){
+    font-size: $basefontsize;
+  } 
+  overflow-x: hidden;
+}
+// HEADINGS ====================================================
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  margin : 0;
+  font-family : $altfont;
+  font-weight : $baseheadingfontweight;
+  color : $textcolor;
+  text-rendering : optimizelegibility;
+}
+// Set headers line-height, margin bottom and font size
+@each $header,$margin-bot,$font-size,$line-height in (h1, 0, 2.8, 1.5)(h2, 0, 2.4, 1.5)(h3, 0, 2.1, 1.5)(h4, 0, 1.8, 1.5)(h5, 0, 1.6, 1.5)(h6, 0, 1.4, 1.5){
+  #{$header}, .#{$header}{
+    margin-bottom : $margin-bot;
+    font-size: ($font-size) * 1rem;
+    line-height : $line-height;
+  }
+}
+
+
+// TYPOGRAFÍA ====================================================
+
+p,
+ul{
+  margin-bottom : $baselineheight;
+  line-height : $baselineheight;
+}
+
+li{
+  list-style: none;
+}
+
+hr{
+  clear : both;
+  display : block;
+  margin : $baselineheight 0;
+  padding : 0;
+  height : 1px;
+  border : 0;
+  border-top : 1px solid $bordercolor;
+}
+
+b, strong{
+  font-weight : bold;
+}
+
+a{
+  text-decoration: none;
+  color: $linkcolor;
+}
+// Web Colours
+$selection: false;
+@if $selection == true{
+  ::selection{
+    background-color : $selection-bgc;
+    color: $selection-color;
+  }
+}
+

@@ -1,0 +1,32 @@
+@if $incluir-iconos == true{
+  /*------------------------------------
+      ·ICONOS
+   ------------------------------------*/
+
+  $font-family-icon: 'icomoon';
+
+  @font-face{
+    font-family: $font-family-icon;
+    src: url('#{$font-dir}/icomoon.eot?28z1tt'),url('#{$font-dir}/icomoon.eot?28z1tt#iefix') format('embedded-opentype'),url('#{$font-dir}/icomoon.ttf?28z1tt') format('truetype'),url('#{$font-dir}/icomoon.woff?28z1tt') format('woff'),url('#{$font-dir}/icomoon.svg?28z1tt#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  // chevron-thin-up    "\e903"
+  // chevron-thin-down  "\e900"
+  // chevron-thin-left  "\e901"
+  // chevron-thin-right "\e902"
+
+  // cross            "\e910"
+  // minus            "\e911"
+  // plus             "\e912"
+  // menu             "\e906"
+  // magnifying-glass "\e904"
+
+  // mail       "\e905"
+  // facebook   "\e90b"
+  // github     "\e90c"
+  // instagram  "\e90d"
+  // twitter    "\e90e"
+  // youtube    "\e90f"
+}

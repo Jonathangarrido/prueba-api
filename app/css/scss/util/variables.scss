@@ -1,0 +1,143 @@
+// -------------------------------------
+//      ·SETTINGS
+// -------------------------------------
+
+$incluir-grid						: true;
+$incluir-form						: true;
+$incluir-table					: true;
+$incluir-iconos					: true;
+$incluir-angular-animate: true;
+
+
+// -------------------------------------
+//      BREAKPOINTS Grill
+// -------------------------------------
+
+//  .text 
+//    color: pink
+//    @include respond-to(medium) 
+//      color: maroon
+ 
+$breakpoints: (
+  s: 320px, 
+  m: 440px, 
+  l: 720px, 
+  xl: 1200px
+);
+
+// -------------------------------------
+//      ·DIR
+// ------------------------------------- 
+
+// Use: background-image:url("#{$image-dir}/btn.jpg")
+$image-dir: "../images";
+
+// src:url('#{$font-dir}/icomoon.eot')
+// src:url('#{$font-dir}/icomoon.eot?#iefix') format('embedded-opentype'),
+// url('#{$font-dir}/icomoon.woff') format('woff'),
+// url('#{$font-dir}/icomoon.ttf') format('truetype'),
+// url('#{$font-dir}/icomoon.svg#icomoon') format('svg')
+$font-dir: "../font";
+  
+// -------------------------------------
+//      ·LAYOUT
+// ------------------------------------- 
+
+// Definimos elementos constantes del layout
+$baselineheight : 1.5em;
+$pagemaxwidth 	: 1200px;
+$radius 				: 5px;
+$hovertransition: .3s;
+$animationtime 	: .3s;
+$animation			: all ease-in $animationtime;
+$paddingpage 		: 1rem;
+$shadow 				: 0px 2px 10px rgba(0, 0, 0, 0.4);
+
+// Tamaño iconos
+$fs-iconos: 1.5rem;
+
+// Ancho del contenedor del video
+$width-video: 800px;
+
+// z-index
+$index-0 : -1;
+$index-1 : 2;
+$index-2 : 10;
+$index-3 : 999999;
+$index-4 : 99999999;
+
+// -------------------------------------
+//      ·FONT-FACE
+// -------------------------------------
+
+$basefont	: 'PT Sans Narrow', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$altfont 	: 'Anton', 'Helvetica Neue',Georgia, Times, "Times New Roman";
+$baseheadingfontweight: normal;
+
+// -------------------------------------
+//      ·TAMAÑOS
+// -------------------------------------
+
+$basefontsize : 16px;
+
+// ------------------------------------
+//      ·COLORS
+// -------------------------------------
+
+$color-base      	: #D71E00; //rojo
+$color-base-light	: lighten($color-base, 30%);
+$color-secondary  : #058789; // azul
+$color-tertiary   : #FFC857; // amarillo
+
+// Web
+$background				: #FBFBFB;
+$textcolor				: #494949; //#494949;
+$textcolor-strong	: black;
+$bordercolor			:	#494949;
+$selection-bgc		: $color-base-light;
+$selection-color	: initial;
+
+// Links  //////////////////////
+$linkcolor : $color-base;
+
+// -------------------------------------
+//      ·TEXTURAS
+//  -------------------------------------
+
+// Definimos Colores y elementos de popups, mensajes de alerta, etc...
+$color-alert  	: rgb(252,228,207);
+$color-error  	: rgb(218,79,73);
+$color-info   	: rgb(66, 184, 221);
+$color-success  : rgb(91,183,91);
+
+
+//sociales
+$fb					: rgb(59, 89, 182);
+$tw 				: rgb(64,153,255);
+$googleplus : rgb(221, 75, 57);
+$pinterest 	: rgb(203, 32, 39);
+$skype 			: rgb(18,165,244);
+$spotify		: rgb(129,183,26);
+$instagram	: #4E433C;
+$tumblr			: #2B4964;
+$vimeo			: #86B32D;
+$soundcloud	: #f76600;
+$youtube		: #FF3333;
+$linkedin		: #4875B4;
+$flickr			: #FE0883;
+$foursquare	: #8FD400;
+$mail				: #F99600;
+
+// -------------------------------------
+//      ·TABLAS
+//  -------------------------------------
+$tablebackground    : transparent;
+$tablestripe        : lighten($color-tertiary, 20%);
+$tablestripehead    : lighten($color-tertiary, 5%);
+$tablehover         : $color-tertiary;
+$tableborder        : grey;
+$tableborderwidth   : 1px;
+$tableborderstyle   : solid;
+
+$nav-color: $textcolor;
+$nav-background: #fff;

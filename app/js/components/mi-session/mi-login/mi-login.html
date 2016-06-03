@@ -1,0 +1,10 @@
+
+<div class="login">
+  <form name="form1">
+    <h6>Bienvenido <b>{{user.name}}</b></h6>
+    <input type="text"placeholder="usuario"ng-model="user.name"required>
+    <input type="password"placeholder="password"ng-model="user.pass"required>
+    <button ng-disabled="form1.$invalid"ng-click="$ctrl.login(user)">Enviar</button>
+    <p>{{$ctrl.msgtxt}}</p>
+  </form>
+</div>

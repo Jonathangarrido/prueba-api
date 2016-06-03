@@ -1,0 +1,39 @@
+<div class="logout">
+  <a href=""ng-click="$ctrl.logout()">Logout</a>
+</div>
+<div>
+  
+  <h3>Oportunidades</h3>
+  <div>
+    <input type="text" placeholder="Buscador..." ng-model="$ctrl.search">
+    <button>Nueva</button>
+  </div>
+  <table>
+    <tr>
+      <th>Proyecto</th>
+      <th>Nombre</th>
+      <th>Sitio</th>
+      <th>Terreno</th>
+      <th>Precio</th>
+      <th>Precio oferta</th>
+      <th>Editar</th>
+      <th>Borrar</th>
+    </tr>
+    <tr ng-repeat='casa in $ctrl.casas'>
+      <td>{{casa.id}}</td>
+      <td>{{casa.name}}</td>
+      <td>{{casa.description}}</td>
+      <td>{{casa.price}}</td>
+    </tr>
+    <!-- <tr>
+      <td>Departamentos de Hacienda</td>
+      <td>Casa Mediterranea 234 m2</td>
+      <td>A01</td>
+      <td>345 m2</td>
+      <td>5.000</td>
+      <td>4.500</td>
+      <td>Editar</td>
+      <td>Borrar</td>
+    </tr> -->
+  </table>
+</div>
